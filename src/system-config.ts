@@ -7,10 +7,14 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'moment': 'vendor/moment/moment.js'
 };
 
 /** User packages configuration. */
 const packages: any = {
+  'moment':{
+    format: 'cjs'
+  }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -37,6 +41,11 @@ const barrels: string[] = [
   'app/structural/header',
   'app/structural/footer',
   'app/mappitup',
+  'app/structure/header',
+  'app/structure/footer',
+  'app/structure/sidemenu',
+  'app/structure/shell',
+  'app/shell',
   /** @cli-barrel */
 ];
 

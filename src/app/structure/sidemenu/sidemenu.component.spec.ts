@@ -10,14 +10,11 @@ import {
   async, inject
 } from '@angular/core/testing';
 
-import { GeolocationService } from './shared/geolocation.service';
-import { Coords } from './shared/coords';
+import { SidemenuComponent } from './sidemenu.component';
 
-import { MappitupComponent } from './mappitup.component';
-
-describe('Component: Mappitup', () => {
+describe('Component: Sidemenu', () => {
   it('should create an instance', () => {
-    let component = new MappitupComponent(new GeolocationService);
+    let component = new SidemenuComponent();
     expect(component).toBeTruthy();
   });
 });

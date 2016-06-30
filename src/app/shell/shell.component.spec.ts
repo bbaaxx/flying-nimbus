@@ -10,14 +10,11 @@ import {
   async, inject
 } from '@angular/core/testing';
 
-import { GeolocationService } from './shared/geolocation.service';
-import { Coords } from './shared/coords';
+import { ShellComponent } from './shell.component';
 
-import { MappitupComponent } from './mappitup.component';
-
-describe('Component: Mappitup', () => {
+describe('Component: Shell', () => {
   it('should create an instance', () => {
-    let component = new MappitupComponent(new GeolocationService);
+    let component = new ShellComponent();
     expect(component).toBeTruthy();
   });
 });

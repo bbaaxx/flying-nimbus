@@ -1,3 +1,11 @@
-<p>
-  mappitup works!
-</p>
+<p>{{title}}</p>
+<div>
+  <p>Lat: {{myLocation?.latitude}} | Lon: {{myLocation?.longitude}}</p>
+  <p>Accuracy: {{myLocation?.latitude}}</p>
+  <button (click)="updateLocation()">Force Location Update</button>
+  <button (click)="updateLocation({enableHighAccuracy:true})">Force Location Update (High Accuracy)</button>
+  <hr>
+  <input #box (keyup)="onKey(box.value)" (keyup.enter)="values=box.value" (blur)="values=box.value">
+  <p>{{aValue}}</p>
+  <p>{{values}}</p>
+</div>
