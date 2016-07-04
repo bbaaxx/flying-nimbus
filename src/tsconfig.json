@@ -40,7 +40,11 @@
     "app/structure/header/shared/index.ts",
     "app/structure/sidemenu/index.ts",
     "app/structure/sidemenu/shared/index.ts",
-    "app/structure/sidemenu/sidemenu.component.ts"
+    "app/structure/sidemenu/sidemenu.component.ts",
+    "app/user-actions/register/index.ts",
+    "app/user-actions/register/register.component.ts",
+    "app/user-actions/register/registration-data.ts",
+    "app/user-actions/register/shared/index.ts"
   ],
   "filesGlob": [
     "main.ts",

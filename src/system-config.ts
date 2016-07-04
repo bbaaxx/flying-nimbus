@@ -26,6 +26,7 @@ const barrels: string[] = [
   '@angular/core',
   '@angular/common',
   '@angular/compiler',
+  '@angular/forms',
   '@angular/http',
   '@angular/router',
   '@angular/platform-browser',
@@ -46,6 +47,8 @@ const barrels: string[] = [
   'app/structure/sidemenu',
   'app/structure/shell',
   'app/shell',
+  'app/user-actions/registration',
+  'app/user-actions/register',
   /** @cli-barrel */
 ];
 

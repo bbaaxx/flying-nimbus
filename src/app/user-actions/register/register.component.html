@@ -1,0 +1,86 @@
+<form *ngIf="formIsActive" (ngSubmit)="onSubmit(registrationForm)" #registrationForm="ngForm">
+
+  <div class="row">
+    <div class="medium-6 columns">
+      <label>Nickname
+        <input type="text" class="form-control"
+          name="nickname" [(ngModel)]="model.nickname" #nickname="ngModel"
+          #nicknameControl
+          (keydown)="onKeyDown($event)"
+          (keyup.enter)="userNickname=nicknameControl.value"
+          (keyup)="onKeyUp(nicknameControl.value)"
+          placeholder="Pick a nice one ..."
+          aria-describedby="nicknameHelpText"
+          required >
+      </label>
+      <div [hidden]="nickname.valid || nickname.pristine" class="">
+        <p id="nicknameHelpText" class="help-text">Please provide a valid nickname</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="medium-6 columns">
+      <label>*Email
+        <input type="text"  class="form-control"
+          name="emailAddress" [(ngModel)]="model.emailAddress" #emailAddress="ngModel"
+          placeholder="email@example.com"
+          aria-describedby="emailAddressHelpText"
+          required >
+      </label>
+      <div [hidden]="emailAddress.valid || emailAddress.pristine" class="">
+        <p id="emailAddressHelpText" class="help-text">That doesn't look like a valid email</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="medium-6 columns">
+      <label>*Password
+        <input type="password"  class="form-control"
+          name="password" [(ngModel)]="model.password" #password="ngModel"
+          aria-describedby="passwordHelpText"
+          required >
+      </label>
+      <div [hidden]="password.valid || password.pristine" class="">
+        <p id="passwordHelpText" class="help-text">Please enter a password</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="medium-6 columns">
+      <label>Super Power
+        <select class="form-control"
+          name="superPower" [(ngModel)]="model.superPower" #superPower="ngModel"
+          aria-describedby="superPowerHelpText"
+          required >
+          <option *ngFor="let sp of superPowers" [value]="sp">{{sp}}</option>
+        </select>
+      </label>
+      <div [hidden]="superPower.valid || superPower.pristine" class="">
+        <p id="superPowerHelpText" class="help-text">Please enter a password</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="medium-6 columns">
+      <button (click)="newRegistration()" type="button" class="button alert">Clear</button>
+      <button type="submit" class="button success">Submit</button>
+    </div>
+    <div class="medium-6 columns">
+      <button (click)="logTheModel()" type="button" class="button">Log model</button>
+      <button (click)="logTheForm(registrationForm)" type="button" class="button">Log form</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="medium-6 columns">
+      <br>Keyup Event: {{debugContent.keyupEvent}}
+      <br>Keydown Event: {{debugContent.keydownEvent}}
+      <br>User Nickname {{userNickname}}
+    </div>
+  </div>
+
+</form>
