@@ -1,5 +1,6 @@
 <form *ngIf="formIsActive" (ngSubmit)="onSubmit(registrationForm)" #registrationForm="ngForm">
 
+  <!-- nickname field -->
   <div class="row">
     <div class="medium-6 columns">
       <label>Nickname
@@ -19,6 +20,7 @@
     </div>
   </div>
 
+  <!-- email field -->
   <div class="row">
     <div class="medium-6 columns">
       <label>*Email
@@ -34,6 +36,7 @@
     </div>
   </div>
 
+  <!-- password field -->
   <div class="row">
     <div class="medium-6 columns">
       <label>*Password
@@ -48,6 +51,7 @@
     </div>
   </div>
 
+  <!-- Super power dropdown -->
   <div class="row">
     <div class="medium-6 columns">
       <label>Super Power
@@ -64,6 +68,7 @@
     </div>
   </div>
 
+  <!-- Buttons -->
   <div class="row">
     <div class="medium-6 columns">
       <button (click)="newRegistration()" type="button" class="button alert">Clear</button>
@@ -75,7 +80,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row" *ngIf="false">
     <div class="medium-6 columns">
       <br>Keyup Event: {{debugContent.keyupEvent}}
       <br>Keydown Event: {{debugContent.keydownEvent}}

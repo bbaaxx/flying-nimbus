@@ -30,7 +30,7 @@ export class RegisterComponent implements OnInit {
     ];
 
     if (this.debugme) {
-      this.logTheModel();
+      // this.logTheModel();
     }
   }
 
@@ -55,6 +55,7 @@ export class RegisterComponent implements OnInit {
     setTimeout(() => this.formIsActive = true, 0);
   }
 
+  // Things to understand WTH is going on
   logTheModel() {
     console.log(JSON.stringify(this.model));
   }
