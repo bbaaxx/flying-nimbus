@@ -15,40 +15,9 @@
     "target": "es5",
     "inlineSources": true
   },
+
   "files": [
     "main.ts",
-    "typings.d.ts",
-    "app/app.component.ts",
-    "app/app.routes.ts",
-    "app/environment.ts",
-    "app/index.ts",
-    "app/mappitup/index.ts",
-    "app/mappitup/mappitup.component.ts",
-    "app/mappitup/shared/coords.ts",
-    "app/mappitup/shared/geo-data.ts",
-    "app/mappitup/shared/geolocation.service.ts",
-    "app/mappitup/shared/index.ts",
-    "app/shared/index.ts",
-    "app/shell/index.ts",
-    "app/shell/shared/index.ts",
-    "app/shell/shell.component.ts",
-    "app/structure/footer/footer.component.ts",
-    "app/structure/footer/index.ts",
-    "app/structure/footer/shared/index.ts",
-    "app/structure/header/header.component.ts",
-    "app/structure/header/index.ts",
-    "app/structure/header/shared/index.ts",
-    "app/structure/sidemenu/index.ts",
-    "app/structure/sidemenu/shared/index.ts",
-    "app/structure/sidemenu/sidemenu.component.ts"
-  ],
-  "filesGlob": [
-    "main.ts",
-    "typings.d.ts",
-    "app/**/*.ts",
-    "!app/**/*.spec.ts"
-  ],
-  "atom": {
-    "rewriteTsconfig": true
-  }
+    "typings.d.ts"
+  ]
 }

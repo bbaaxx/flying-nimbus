@@ -1,4 +1,4 @@
-export class BasedefuegoPage {
+export class FlyingNimbusPage {
   navigateTo() {
     return browser.get('/');
   }

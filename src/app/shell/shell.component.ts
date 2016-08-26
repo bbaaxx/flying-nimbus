@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
-import { HeaderComponent } from '../structure/header';
-import { FooterComponent } from '../structure/footer';
-import { SidemenuComponent } from '../structure/sidemenu';
+import { HeaderComponent } from '../structure/header/index';
+import { FooterComponent } from '../structure/footer/index';
+import { SidemenuComponent } from '../structure/sidemenu/index';
 
 @Component({
   moduleId: module.id,

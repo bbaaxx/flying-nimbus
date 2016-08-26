@@ -1,5 +1,5 @@
 import { provideRouter, RouterConfig } from '@angular/router';
-import { MappitupComponent } from './mappitup';
+import { MappitupComponent } from './mappitup/index';
 
 export const routes: RouterConfig = [
   { path: '', component: MappitupComponent },

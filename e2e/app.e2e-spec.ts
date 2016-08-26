@@ -1,10 +1,10 @@
-import { BasedefuegoPage } from './app.po';
+import { FlyingNimbusPage } from './app.po';
 
-describe('basedefuego App', function() {
-  let page: BasedefuegoPage;
+describe('flying-nimbus App', function() {
+  let page: FlyingNimbusPage;
 
   beforeEach(() => {
-    page = new BasedefuegoPage();
+    page = new FlyingNimbusPage();
   });
 
   it('should display message saying app works', () => {
